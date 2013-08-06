@@ -68,7 +68,7 @@ Optics\\Study Report\\(Draft)}
 \input{acronym}
 
 %%% Executive Summary
-%\include{es/es}
+\include{es/es}
 
 %%% Intruduction
 \include{intro/introduction}
@@ -76,7 +76,6 @@ Optics\\Study Report\\(Draft)}
 %%% Science case and requirements
 \include{science/sci_intro}
 \include{science/veryhighz/nbf}
-%\include{science/}
 \include{science/sci_req}
 
 %%% System Overview
@@ -84,7 +83,7 @@ Optics\\Study Report\\(Draft)}
 \include{sys/sysreq}
 
 %%% GLAO Simulation
-%\include{simulation/intro}
+\include{simulation/intro}
 \include{simulation/glao/oya}
 %\include{simulation/moao/akiyama}
 % galaxy simulation: imaging
@@ -94,33 +93,27 @@ Optics\\Study Report\\(Draft)}
 \include{simulation/imaging}
 \include{simulation/spectroscopy}
 
-%%% System Design
+%%% GLAO System Design
 \include{development/design/system_design}
-\include{development/design/subsystem_design}
-\include{development/design/DSM_design}
-\include{development/design/Laser_design}
-\include{development/design/WFS_design}
-\include{development/design/Instrument_design}
 
-%%% Telescope
+%%% Telescope Interface and modification
 \include{development/telescope/telescope}
 
-%%% Instruments
+%%% Instruments design
 \include{instrument/inst}
 \include{instrument/optics/optcraft}
 \include{instrument/mechanics/mechanics}
-%\include{instrument/cryostat}
+\include{instrument/cryostat}
+
+%%% Operations
+\include{operation/operation}
 
 %%% Technical challenges and risk
-%\include{GL_characteristics}
-%\include{DSM_calib}
-%\include{DSM_exchanger}
-%\include{Cassegrain_WFS_unit}
-%\include{WideFOVinstrument}
-%\include{MOS_IFS}
+\include{development/challenges/technical_challenges}
 
 %%% Development Plan
-%\include{plan/management}
+\include{plan/dev_plan}
+%\include{management}
 %\include{plan/budget}
 %\include{plan/schedule}
 %\include{plan/risk_management}
@@ -132,40 +125,40 @@ Optics\\Study Report\\(Draft)}
 %%%% structure in '2012 Japanese edition of Study Report'
 
 %%% Science
-\include{science/sci_intro}
+%\include{science/sci_intro}
 %\include{science/minowa/minowa}
 %\include{science/iwata/ngao_spec_simulation}
-\include{science/iwata/legacy_survey}
-\include{science/iwata/nbf}
-\include{science/koyama/ykoyama}
-\include{science/saito/saito}
-\include{science/imanishi/ImanishiSJ}
-\include{science/shibuya/shibuya}
-\include{science/yasui/yasui}
-\include{science/chiba/chiba}
-\include{science/nishiyama/nishi}
-\include{science/pyo/pyo}
-\include{science/fukagawa/fukagawa}
-\include{science/iwata/sci_summary} %\section{Science Summary: System Requirements}
+%\include{science/iwata/legacy_survey}
+%\include{science/iwata/nbf}
+%\include{science/koyama/ykoyama}
+%\include{science/saito/saito}
+%\include{science/imanishi/ImanishiSJ}
+%\include{science/shibuya/shibuya}
+%\include{science/yasui/yasui}
+%\include{science/chiba/chiba}
+%\include{science/nishiyama/nishi}
+%\include{science/pyo/pyo}
+%\include{science/fukagawa/fukagawa}
+%\include{science/iwata/sci_summary} %\section{Science Summary: System Requirements}
 
 %%% AO Simulation
-\include{simulation/oya/oya}
-\include{simulation/akiyama/akiyama}
-\include{science/minowa/minowa}
-\include{science/iwata/ngao_spec_simulation}
+%\include{simulation/oya/oya}
+%\include{simulation/akiyama/akiyama}
+%\include{science/minowa/minowa}
+%\include{science/iwata/ngao_spec_simulation}
 
 %%% System Design
-\include{project/hayano/system_design}
+%\include{project/hayano/system_design}
 
 %%% Instruments
 %\chapter{Instruments for Subaru Next-Generation AO}
-\include{inst/inst}
-\include{inst/optics/optcraft}
-\include{inst/inst_other_issue}
+%\include{inst/inst}
+%\include{inst/optics/optcraft}
+%\include{inst/inst_other_issue}
 
 %%% Development Plan
-\include{project/hayano/development_plan}
+%\include{project/hayano/development_plan}
 
-\include{project/actions/action_items}
+%\include{project/actions/action_items}
 
-\end{document}
+%\end{document}
