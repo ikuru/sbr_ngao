@@ -222,6 +222,125 @@ offset.  So the focusing is more important in this case.
 \subsubsection{B. Cases in which Subaru Telescope optical parameters are
    changed}
 
+Next we examined the case in which Subaru Telescope's optical parameters
+are changed. In order to make the telescope's F number smaller, the
+primary mirror's aspheric parameters should be negative. The actuator
+storoke for the primary mirror is guaranteed up to 12$\mu$m. We assume
+the conic parameters so that displacement at the edge of the primary
+mirror is 12$\mu$m, and set F number to be 9.8.
+
+The parameters of the secondary mirror is determined as it is optimal
+for this Cassegrain wide-field instrument, and it is independent from
+the existing secondary mirrors of Subaru Telescope.
+It is a bipolar mirror with a diameter of $\phi$1544mm. The radius of
+curvature is 7233.308mm and the conic constant is $-2.35464$.
+The field of view is determined by the effective maximum size of the
+lens ($\phi$400mm), and it is $\phi16.2'$.
+Thanks to the smaller F number, the field of view is 28\% larger than
+the case without changing the telescope parameters. The effective
+diameter of the primary mirror to avoid the beam outside of the
+secondary pupil and primary mirror ($\phi$8.2m) is $\phi$7.93m.
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=120mm]{\thisdir figs/optcraft_fig15.eps}
+}
+\caption{The optical layout of the case B: Subaru Telescope
+ optical parameters are modified. A field flatner is included in this
+ design. 
+}
+\label{fig:optcraft_fig15}
+\end{figure}
+
+In this design a set of lenses as a field flatner is included. 
+The spot diagram at the flat MOS mask position is presented in 
+Fig. \ref{fig:optcraft_fig16}.
+Although small coma aberration is present, its effect is small. There is
+no chromatic aberration, overall image quality is good, although there
+is distortion aberration at the edge of the FoV.
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=100mm]{\thisdir figs/optcraft_fig16.eps}
+\includegraphics[width=60mm]{\thisdir figs/optcraft_fig17.eps}
+}
+\caption{(Left) Spot diagram at the MOS mask position.
+(Right) distortion aberration at the MOS mask position.
+}
+\label{fig:optcraft_fig16}
+\end{figure}
+
+The configuration of optics after MOS position is similar to the case
+without change of the telescope parameters: collimator with nine lenses
+and camera with seven lenses. The focal plane is flat. The optical
+layout in shown in Fig.\ref{fig:optcraft_fig15}.
+
+In Fig. \ref{fig:optcraft_fig18} we show the spot diagram and distortion
+aberration at the position of detectors.
+Image quality at outskirt of the FoV ($>6'$) in a short wavelength
+(0.8--0.9$\mu$m) degrades by $\sim0.2''$. Otherwise image quality
+satisfies the goal (FWHM$\sim 0.15''$).
+The maximum distortion aberration at the edge of FoV is $-1.24$\%, which
+is smaller than the cases without changes in telescope parameters.
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=120mm]{\thisdir figs/optcraft_fig18.eps}
+\includegraphics[width=60mm]{\thisdir figs/optcraft_fig19.eps}
+}
+\caption{(Left) Spot diagram at the positions of the detectors.
+Images with five positions within the FoV (vertical) and seven
+ wavelengths from 0.8$\mu$m to 2.5$\mu$m (horizontal) are plotted.
+The box size is 100$\mu$m, which corresponds to $0.59''$.
+The RMS spot diameters are $0.2''$ (at $8.1'$, $0.8\mu$m), 
+$0.16''$ (at $6'$, $0.8\mu$m), $0.19''$ (at $6'$, $0.9\mu$m), and for
+ other positions and wavelength the spot diameters are within $0.15''$.
+(Right) Distortion aberration. It reaches to $-1.24$\% at the edge of
+ the FoV.
+}
+\label{fig:optcraft_fig18}
+\end{figure}
+
+Performance in spectroscopy mode is examined and is reported in 
+Fig.~\ref{fig:optcraft_fig20}. Here a grism made of fused silica, 160
+lines/mm, blaze angle 35$^\circ$ is assumed, and the sizes of spectra on
+the detector is presented.
+
+In regards to the image quality, as shown in
+Fig.~\ref{fig:optcraft_fig21}, in some cases at the edge of FoV or
+shortest/longest wavelengths the RMS spot diameter becomes as large as 
+$0.23''$. Otherwise the image quality satisfies the goal, especially
+within $6'$ from the center of FoV.
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=120mm]{\thisdir figs/optcraft_fig20.eps}
+}
+\caption{
+Spectroscopic image positions for a configuration shown in
+ Fig.~\ref{fig:optcraft_fig15}. The box size is 180mm. We assume to use
+ a grism made of fused silica with 160 lines/mm, and blaze angle
+ 35$^\circ$.
+}
+\label{fig:optcraft_fig20}
+\end{figure}
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=120mm]{\thisdir figs/optcraft_fig21.eps}
+}
+\caption{Spot diagram for Case B, spectroscopy mode.
+In shorter wavelength the performance is somewhat worse than the goal;
+ at 0.8$\mu$m RMS spot diameters are in general 0.17--0.18$''$, and 
+ 0.2$''$ at 0.9$\mu$m. In longer wavelength spot diameter becomes larger
+ at positions with distance from the center larger than $6'$ with
+ $\lambda = 2.3-2.5\mu$m. Otherwise the image quality satisfies the goal
+ ($0.15''$).
+}
+\label{fig:optcraft_fig21}
+\end{figure}
+
+
 
 \subsection{Optical Design with FoV Split}
 
