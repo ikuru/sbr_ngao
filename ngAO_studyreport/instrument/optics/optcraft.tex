@@ -139,7 +139,7 @@ range 0.8--2.5$\mu$m without order-sorting.
 Fig.~\ref{fig:optcraft_fig06} shows the positions of images in
 spectroscopy as a function of wavelength.
 Here we assume a fused silica grism with 160 grooves/mm, blaze angle 
-34$\circ$\footnote{In section ** we examine more details of various
+34$^\circ$\footnote{In section ** we examine more details of various
 grisms}.
 Fig.~\ref{fig:optcraft_fig07} is the spot diagram. Image qualities at
 the shorter and longer wavelength edges and at the edge of FoV is not
@@ -341,11 +341,87 @@ In shorter wavelength the performance is somewhat worse than the goal;
 \end{figure}
 
 
+\clearpage
 
 \subsection{Optical Design with FoV Split}
 
+By the optical studies described in the above section, we have found
+solutions with FoV diameter larger than 10 arcminutes. Then we made
+studies of optical design with FoV split into four segments to explore
+possibilities of wider FoV. Again, we examined two cases -- a case using 
+a secondary mirror with the same parameter as the current one, and
+another case with a change of the secondary mirror parameters.
+
+One constraint we need to consider is that we need to place wavefront
+sensors (WFS) for GLAO in front of the instrument. The separation of
+split FoVs is constrained in order to reserve some areas between split
+FoVs for WFS. The patrol area of WFS depends on the distance between the
+WFS and the instrument window; if WFS needs to be located distant from
+the window, the patrol area becomes narrower.
+
 \subsubsection{Case A: secondary mirror parameter is the same as
    existing one}
+
+As a first case we examined a solution keeping the optical parameter of
+Subaru Telescope while allowing the change of the shape of the primary
+mirror up to $12\mu$m. 
+In Fig.~\ref{fig:optcraft2013_fig01} we show the layout of the FoV at
+the telescope focus. Each segment FoV has $8.5'\times8.5'$ and
+separations between FoVs are $5.7'$. If the pick-off mirror of WFS can
+be located just above the instrument entrance window, the width of the
+patrol area between the FoVs will be $3.6'$, while it becomes $0.7'$ if
+the pick-off mirror is 500mm above the window in order to avoid
+vignetting. 
+
+Note that in order to cover the all of the FoVs making the secondary
+mirror as a pupil, the primary mirror should be larger than 8.8m. So
+this configuration does not follow the standard way of near-infrared
+instrument and significant thermal emission outside of the primary
+mirror is expected. Given this problem, here we use this configuration
+to examine the image quality without changing the telescope optical
+parameters. 
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[width=120mm]{\thisdir figs/20130315optcraft_fig01.eps}
+}
+\caption{Layout of FoVs at the telescope focus for the case with FoV
+ splitting, with no change in the telescope parameters. Four rectangular
+ boxes are FoVs having $8.5'\times8.5'$ each. Cross shapes between FoVs
+ indicating patrol areas for wavefront sensors. The broader one is for
+ the case the pick-off mirror can be located just above the instrument
+ entrance window, and the narrower one is for the case the pick-off
+ mirror is 500mm above the window.
+}
+\label{fig:optcraft2013_fig01}
+\end{figure}
+
+These four FoVs are symmetric. Hereafter we examine the performance of
+one of the FoVs. The entire optical layout including the telescope and
+the zoom-up view of the instrument part are shown in
+Fig.~\ref{fig:optcraft2013_fig02}.
+As seen in this figure, each FoV is off-axis to the telescope, and this
+causes asymmetric aberrations. In order to correct them, corrector
+lenses are put in front of the telescope focus. The components of these
+lenses are shifted and/or tilted to correct asymmetric aberrations,
+while each lense remain symmetric (not off-axis) to keep them from being
+too complicated to be manufactured.
+
+\begin{figure}[!ht]
+\centerline{
+\includegraphics[height=140mm]{\thisdir figs/20130315optcraft_fig02.eps}
+\includegraphics[height=140mm]{\thisdir figs/20130315optcraft_fig03.eps}
+}
+\caption{Optical layout for the case without the change in telescope
+ parameters. (Left) the entire layout including the telescope. (Right)
+ the instrument optical layout.
+}
+\label{fig:optcraft2013_fig02}
+\end{figure}
+
+(TBC)
+
+
 
 \subsubsection{Case B: secondary mirror parameter is modified}
 
