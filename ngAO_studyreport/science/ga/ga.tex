@@ -1,0 +1,513 @@
+% 20131222
+\def\thisdir{science/ga/}
+%\documentclass[12pt,letter,times]{cv}
+%\usepackage[T1]{fontenc}
+%\usepackage{arev}
+%\usepackage{setspace}
+%\usepackage{graphicx}
+%\usepackage{natbib}
+%\usepackage{amssymb}
+%\usepackage{float}
+%\singlespacing
+\newcommand*{\bull}{{\scriptsize $\bullet$\hspace{0.15cm}}}
+
+\section{The Galaxy and nearby galaxies
+\label{sec:ga}}
+
+\noindent
+%\\vspace{5mm}
+%\large
+\begin{center}
+%% Authors
+{\bf Alan Walker McConnachie\footnote{NRC Herzberg Institute of
+ Astrophysics, Victoria, BC, Canada
+ \noindent(alan.mcconnachie@nrc-cnrc.gc.ca)}, 
+Masashi Chiba\footnote{Tohoku University, Sendai 980-8578, Japan}, 
+Shogo Nishiyama\footnote{NAOJ, Tokyo, Japan}, 
+Kim Venn\footnote{University of Victoria, BC, Canada}}
+\end{center}
+\vspace{0.5cm}
+
+%\author{Alan Walker McConnachie}
+
+%\begin{document}
+
+%\maketitle
+
+%\vspace{-0.25cm}
+
+This report summarizes some relevant science considerations for the
+development of a new near infrared (NIR) instrument capability on the
+Subaru telescope. The first section discusses possible science drivers
+for resolved stellar population studies of our Galaxy, the nearest
+galaxies, and related science. In many respects, these science themes
+are the ideal science drivers for a NIR instrument assisted by Ground
+Layer Adaptive Optics (GLAO) since the science is fundamentally
+wide-field and confusion limited. Thus GLAO serves not just as a way of
+increasing sensitivity for fainter sources, but is also crucial for
+correctly identifying brighter sources. The second section of this
+document presents a more general summary of the overall science context
+that this new instrument will operate within, and makes a few general
+points for future consideration. 
+
+\subsection{The Galaxy and nearby galaxies: Precision insights into galaxy evolution in the nearby Universe}
+
+The nearest galaxies - including our own Galaxy - provide the most
+detailed view available on the formation, structure and evolution of
+galaxies spanning a broad range of mass and morphological types. This is
+primarily achieved by obtaining precision data on the positions, colors,
+compositions and kinematics of the many thousands and millions of
+individual resolved stars that are accessible to us through observations
+on 4 - 10m class facilities. In the future, TMT and the EELT will push
+the volume in which this science is possible out to the Virgo cluster
+and beyond, bringing within reach nearly every type of major environment
+in which galaxies are found, and increasing by orders of magnitude the
+number of galaxies for which we can resolve their individual stellar
+constituents. Subaru must aim to play a key role in this transformative
+and growing research area. TMT and EELT are able to observe ultra-deep
+in relatively narrow fields; the focus of Subaru science, therefore,
+should be to {\it complement these facilities by providing a wide field
+perspective of the stellar populations of the nearest galaxies.} 
+
+\subsubsection{The Galactic Center}
+
+The Galactic Center is a primary target for NIR capabilities on large
+telescopes. Massive extinction means that optical surveys are severely
+hampered. Depending on the specific science of interest, the potential
+area that requires to be surveyed is giant, and demands wide-field
+capabilities. This is true not just for imaging but also for
+spectroscopy. For many resolved stellar population goals, spectroscopy
+is better done in the optical; as well as coinciding with the peak of
+the spectral energy distribution (SED), the absence of many strong sky
+lines and the high number of atomic transitions  makes the optical
+extremely useful, in the absence of other contributing factors. However,
+extinction is sufficiently strong in the Galactic Center that the {\it
+only} way to obtain spectra for many of the stars is to go to NIR
+wavelengths (the recent success of APOGEE, for example, testifies to
+this). 
+
+\begin{figure*}[htb]
+  \begin{center}
+%    \includegraphics[angle=0, width=8cm]{GC_NB}\vspace{-1cm}
+    \caption{Identification of intermediate-age stellar populations in
+   the Galactic center through narrow band imaging at NIR
+   wavelengths. See Nishiyama \& Schodel 2013 for more details.}
+  \end{center}
+\end{figure*}
+
+There are many precision studies of the Galactic center planned with
+forthcoming facilities, for example TMT, in order to look at the proper
+motions of stars orbiting the super-massive black hole. However, in
+terms of {\it wide-field} science, there are important questions
+relating to the bulge stellar populations, star clusters near the center
+of the Galaxy (see also next Section) and the connection of the nuclear
+star cluster (NSC) to the Galactic SMBH and bulge. In particular,
+stellar population identification in the NIR can be aided greatly by the
+use of narrow-band filters, to probe specific features and measure the
+shapes of the SED (see Figure 1). Constructing detailed star formation
+histories further helps us to better understand how star formation
+proceeds in the extreme environment of the Galactic Center. However,
+overcoming crowding means that this science generally must be assisted
+by adaptive optics, else source confusion quickly limits the depth to
+which we are able to probe. 
+
+Finally, even although the bulge of the Galaxy is relatively metal-rich,
+galaxy formation models suggest that the bulge may be home to the very
+first stars that formed in the Universe (so-called Population III
+stars). The first stars are believed to form in the highest density
+peaks of the early Universe. At zero redshift, these ``peaks'' are to be
+found in the centers of galaxies and galaxy clusters. Identification of
+candidate stars requires not just high resolution imaging, but also
+spectroscopy, ideally assisted with AO to deal with crowding. While
+broad wavelength coverage at $R>5000$ is useful for candidate
+identification, high resolution ($R>10000-20000$) is required to confirm
+the identification of any primordial stars. 
+
+\subsubsection{Milky Way globular clusters}
+
+\begin{figure*}
+  \begin{center}
+%    \includegraphics[angle=270, width=12cm]{PMclean}\vspace{-0.5cm}
+    \caption{Color-magnitude diagrams (CMDs) of globular cluster
+   NGC188. The left panel shows the CMD of all stars within the field of
+   view, whereas the right panel shows the CMD after removal of all
+   stars with high proper motions (Galactic foreground stars). Note that
+   the binary sequence running parallel to the main sequence is now
+   observable in the cleaned CMD.} 
+  \end{center}
+\end{figure*}
+
+Globular clusters are unique testbeds for stellar evolution and stellar
+dynamics. Their formation and evolution is undoubtedly linked to the
+formation of the Milky Way galaxy itself, albeit in ways that are still
+not fully understood. Nearby globular clusters subtend relatively large
+angles on the sky, and so wide fields of view are particularly
+useful. They are also intrinsically crowded environments, and so well
+sampled PSFs are essential. Roughly 160 globular clusters are known, and
+the median extinction is around a magnitude. Further, in the central
+regions of the Galaxy, we are likely missing some globular clusters;
+numerous candidates are currently being identified in surveys such as
+with UKIRT/WFCAM, and these require follow-up on larger facilities. Near
+IR capabilities, ideally supported with adaptive optics to combat severe
+crowding, are very useful to help understand the globular cluster
+population of the Milky Way.  
+
+As laboratories for the study of stellar populations, it is important
+that analysis of the resolved stars in globular clusters accounts fully
+for foreground contamination from intervening Galactic stars. Foreground
+cleaning is possible with data with high astrometric accuracy:
+comparison of images taken at two different epochs will show foreground
+stars at slightly different positions relative to the more distant
+globular cluster stars, due to their movement between epochs. Analysis
+of the resulting CMD can often show features that were otherwise
+difficult to identify, for example the binary sequence parallel to the
+main sequence of the cluster (see Figure~2). 
+
+With even higher astrometric precision, it is possible to start
+constraining the internal dynamics of clusters through their internal
+proper motions. Here the rms residuals when matching one epoch to the
+other essentially measures the tangential velocity dispersion of the
+cluster. Measuring this quantity as a function of radius is of
+particular interest, since it is a matter of debate whether massive
+black holes exist in the centers of clusters. If they do, they could
+have a measurable effect on the dynamics of the stars at these radii,
+potentially observable in the proper motions. 
+
+\subsubsection{The nearest galaxies}
+
+
+\begin{figure*}
+  \begin{center}
+%    \includegraphics[angle=0, width=7cm]{andi.ps}
+%    \includegraphics[angle=0, width=7cm]{peg.ps}\vspace{-2cm}
+%    \includegraphics[angle=0, width=6cm]{ic3104.ps}\vspace{-1cm}
+    \caption{Structural studies of nearby (dwarf) galaxies. Top panels
+   show two local group dwarf galaxies (Andromeda I and Pegasus) at
+   distances of around 700kpc. The contours in the first panel and the
+   grey-scale in the second panel show the distribution of individual
+   stars in these galaxies, and act here as a proxy for surface
+   brightness to very low light levels (fainter than
+   30mags/sq.arcsec). The contours in the top right panel correspond to
+   the HI distribution in Pegasus. Bottom panel: image of IC3104, at a
+   distance of around 2.3Mpc. Here, contours tracing the diffuse light
+   are overlaid on the $g-$band image. Bright foreground stars are also
+   visible. A warp is present in this galaxy, even although it is very
+   isolated. Star forming regions are visible. Observational studies of
+   this galaxy with excellent IQ can help resolve the global stellar
+   populations of this galaxy (in a similar way as for Local Group
+   galaxies), examine its wide-field structure, and place future pointed
+   observational studies in a global context.}
+  \end{center}
+\end{figure*}
+
+Beyond the Milky Way lie the $\sim 70-80$ galaxies that are members of
+the Local Group. Beyond the Local Group, there are roughly 20 or so
+free-floating ``isolated'' galaxies, before we reach the next nearest
+galaxy groups at around 3Mpc or so. All of these galaxies are within
+reach of current ground based facilities that can resolve their
+brightest stars in uncrowded regions. For the majority of galaxies
+beyond the Local Group, this is generally limited to the far outer
+regions of galaxies, since crowding otherwise prevents us from being
+able to distinguish sources from one another in areas of high stellar
+density. Further, the ability to distinguish stars from faint,
+background galaxies prevents pushing these studies to faint stellar
+populations (confusion with galaxies becomes dominant 0.5-1mag brighter
+than the magnitude limit of the exposure). This type of resolved stellar
+population study allows us to probe not only the ages and metallicities
+of the stars, but also the spatial variation of these quantities and the
+global structural properties of the galaxy. Figure 3 provides a few
+examples of dwarf galaxies that are being studied in this way, in
+addition to a more distant dwarf that is an idea target for the Subaru
+telescope. 
+
+Studies of nearby galaxies that are outside of the Local Group can offer
+valuable insights into galaxy evolution by helping distinguish galactic
+evolutionary processes that are internally-driven from externally-driven
+environmental effects. Specifically, since dwarf galaxies are low mass,
+they are very sensitive to various forms of internal feedback, for
+example supernova-driven winds that can stop star formation and  
+remove gas from the galaxy to inhibit future generations from
+forming. However, examining these effects directly for the closest
+dwarfs is complicated by the fact that the majority of nearby dwarfs are
+satellite galaxies of either the Milky Way and M31. As satellites, dwarf
+galaxies are easily perturbed by their massive hosts. This has a
+significant effect on their evolution, for example by removing gas due
+to ram pressure stripping or perhaps even by inducing star formation
+after pericentric passages (for those dwarfs still with gas). Clearly,
+these competing externally- and internally-driven effects obscure each
+other, such that it is currently extremely difficult to disentangle
+environmental effects from ``intrinsic'' processes. For dwarf galaxies
+beyond the Local Group, however, that are not part of neighboring
+groups, we can be sure (from timing arguments) that these galaxies have
+not been significantly influenced by more massive galaxies. Examination
+of their properties therefore can help establish what observed features
+are due to processes that are intrinsic to the galaxy, and what effects
+are primarily due to environment. 
+
+Subaru is ideally placed to meet this science challenge. Most of the
+dwarf galaxies have half-light radii that subtend a few arcmins, but
+almost all are found to be very extended and the wide field view is
+essential for structural and environmental studies. A stable, well
+characterized PSF is essential, and the PSF must be well sampled in
+order to be able to distinguish between stars and barely resolved
+galaxies near the magnitude limit of the surveys. Small PSFs are
+essential to successfully combat crowded fields. 
+
+\subsubsection{Nearby galaxies in the era of the ELTs}
+
+
+\begin{figure*}
+  \begin{center}
+%    \includegraphics[angle=0, width=7cm]{ngvs.ps}\vspace{-1cm}
+    \caption{Structural studies of distant dwarf galaxies at the
+   distance of the Virgo cluster, undertaken in excellent seeing
+   conditions (IQ$\sim0.6''$) on CFHT as part of the Next Generation
+   Virgo Cluster Survey (NGVS; see Ferrarese et al. 2012). While NGVS
+   presents a uniform study of galaxies in the Virgo cluster, a
+   comparative uniform wide field study of all galaxies between the
+   Local Group and the Virgo cluster is completely lacking. These
+   galaxies are the targets for next generation resolved stellar
+   population studies with the ELTs. It is therefore essential that
+   wide-field NIR photometric studies, ideally equipped with AO, are
+   conducted in order to fully capitalize upon TMT resolved stellar
+   population science.} 
+  \end{center}
+\end{figure*}
+
+TMT will be able to obtain deep photometry and even spectroscopy of
+individual stars at the distance of the Virgo cluster. Its field of view
+is reasonably small, however, and it is not optimized to provide much
+detailed information on the environment of the galaxies or their faint
+outer regions. Consequently, studies of their global structure need to
+be obtained elsewhere in order for forthcoming detailed studies of their
+stellar content to be placed in the correct scientific context. {\it
+Wide field NIR capabilities are essential to motivate and inform TMT
+resolved stellar populations science}. 
+
+At the distance of Virgo, 1\,arcsec corresponds to $\sim 80$pc. Thus,
+even without GLAO, wide field surveys of galaxies out to the Virgo
+cluster allow mapping of their structural and photometric properties
+from the scale of tens of pc to many kpc. To do so, large fields of view
+are desirable - at least $\sim 10\times10$ arcmins and preferably
+larger. A well characterized, stable, uniform and well-sampled PSF is
+essential in order to perform precision morphological modeling and
+characterization of each galaxy.
+
+As an example of what can be achieved for galaxies at the distance of
+Virgo with good IQ, Figure~4 shows radial profiles derived from optical
+ground based observations on CFHT (3.6m) in natural seeing, taken as
+part of the Next Generation Virgo Cluster Survey (NGVS). Clearly,
+observations with even better IQ and a well characterized PSF can probe
+these galaxies at even smaller scales. Already, we are able to probe
+their structures over orders of magnitude in scale. Multi-band studies
+of these galaxies further probe stellar population variations, and set
+the stage for science with the TMT, where the diffraction limited
+capabilities allows resolved stellar population studies like those
+currently underway for Local Group galaxies. 
+
+Clearly, there already exists, through the NGVS, high quality
+homogeneous data on the structures and colors of all galaxies in the
+Virgo cluster. However, between the Local Group and Virgo cluster exists
+a vast numbers of galaxy groups and ``free-floating'' galaxies, all of
+which represent the targets for resolved stellar population studies in
+the era of the ELTs. Most are lacking wide field data that probes outer
+structures and environments, and certainly there is no homogeneous
+analysis of the entire sample or significant subsample. Further, as a
+NIR telescope, TMT science will benefit most from having complementary
+NIR wide field data. Clearly, this is a significant and crucial role
+that Subaru, equipped with a wide field NIR camera, is able to fulfill. 
+
+\subsubsection{Science requirements and possible observing programs}
+
+
+As is clear from the previous discussion, imaging is more important than
+spectroscopy for this science, although studies of the Galactic Center
+would certainly benefit from large, multiplexed, AO-assisted
+spectrographs. For all science discussed herein, the following are
+essential science requirements for an imaging capability: 
+
+\begin{itemize}
+\item Broad wavelength sensitivity/coverage (i.e., J, H, K minimum;
+      I-band sensitivity desirable to give broad color baseline) 
+\item Wide field of view. Minimum of $10 \times 10$\,arcmins. Wider
+      field ($\sim$degree) highly desirable 
+\item Well-sampled (critically sampled) PSF; stable and
+      well-characterized PSF essential 
+\item High throughput, to detect faint stars and low surface brightness
+      features 
+\item Standard broad band filters sufficient, but narrow-band filters
+      desirable 
+\end{itemize}
+
+
+For the main imaging science, excellent IQ is required. This increases
+sensitivity for the detection of faint objects,  overcomes crowding in
+dense stellar environments and is better able to distinguish stars from
+faint compact galaxies. A lot of this science is (marginally) possible
+at around $IQ\sim0.6''$ (e.g., as exemplified by various studies with
+Subaru SuprimeCam and CFHT MegaCam). Better IQ leads to rapidly
+increasing science returns. GLAO is therefore an excellent option, and
+in many respects the science studies described previously are ideal
+science drivers for a GLAO-assisted NIR camera i.e., wide field,
+confusion-limited, NIR science. However we note that the gains of GLAO
+are lost if the PSF is not critically sampled. Since the delivered IQ
+varies depending upon the natural seeing conditions, it is imperative
+for this science that the PSF remains critically sampled even in the
+best (20\%-ile) condition. 
+
+A possible example of an instrument that could satisfy many of these
+requirements is a wide-field camera that can operate at variable
+plate-scales. For example, 3 different plate-scales of 0.05''/pix,
+0.1''/pix, 0.2''/pix could be implemented, where the first two modes are
+used when conditions are excellent or good. The decision as to which
+mode is used is driven by the trade-off between good sampling of the PSF
+versus required field of view (with the smaller plate scales
+corresponding to reduced fields of view). The third mode is used when
+natural seeing conditions are poor, such that the resulting IQ is
+$\gsim 0.5''$, or when the largest field of view is required. Indeed,
+such a mode could additionally be used {\it without} GLAO, perhaps
+resulting in an even larger field of view.
+
+Finally, it is worth noting that the development of an adaptive
+secondary mirror (ASM) on Subaru is crucial for GLAO. However, it would
+also provide a powerful foundation for future instrumentation
+development (beyond 2020s), since an ASM makes future adaptive-optics
+instruments or techniques (e.g., MOAO, high-contrast imaging, etc)
+considerably easier to implement. If Subaru plans to continue NIR
+instrumentation development for the long-term, then development of an
+ASM would be a powerful investment for future instrumentation to
+exploit. 
+
+\subsection{Developing Subaru NIR instrumentation in context}
+
+\subsubsection{Near-IR astronomy in the 2020s, Competition and synergies}
+
+Construction of the Thirty Meter Telescope (TMT) will soon begin on
+Mauna Kea. In the south, construction of the European Extremely Large
+Telescope (E-ELT) moves ever closer. As correctly identified by Subaru
+astronomers, it is essential that the investment in these facilities is
+capitalized by ensuring the instruments and facilities exist to ``feed''
+these giant telescopes and conduct complementary
+observations. Developing a coherent and sustainable plan for telescope
+operations in the era of the ELTs should be a major international
+priority to ensure the best science can be conducted. Of course, this is
+something that will require cooperation between international partners,
+and this was nicely reflected in the attendance of the recent meeting on
+GLAO science in Sapporo by both Japanese and Canadian astronomers. 
+
+An obvious role for Subaru in the era of TMT is to provide the
+wide-field NIR observations that complement the narrow field
+observations of TMT. However, it is important to note a few other key
+missions and instruments that could also impact the development of a new
+NIR instrument on Subaru. 
+
+\par\noindent
+{\bf Space-based observatories}
+
+Two major NIR space facilities will be launched towards the end of this
+decade. The first, {\bf the James Webb Space Telescope (JWST)}, is a
+general-purpose facility and is equipped with both imagers and
+spectrographs. It will be unrivaled in its ability to peer into the deep
+NIR universe, and obtain excellent spectra up to a resolution of
+$R\sim3000$. The second, {\bf Euclid}, will be launched around 2020. It
+will undertake a wide field imaging survey of the sky, surveying
+15000-20000 square degrees and missing out only the region around the
+Galactic plane. It will survey to a depth of Y=J=H=24 at S/N=5 for point
+sources. It will have an encircled energy $EA50<0.3''$, and will use
+$0.3''$/pixels (although it plans to dither in order to improve spatial
+resolution). While the primary purpose of the survey is Dark Energy, the
+wide-field NIR legacy imaging dataset that it will produce will be of
+immense scientific interest. 
+
+We note that there are other wide field NIR space observatories being
+developed, in particular {\bf WISH} and {\bf WFIRST}. Both these
+missions are at an earlier stage of development than JWST and Euclid. A
+potentially interesting synergy exists with {\bf the Space Infrared
+Telescope for Cosmology and Astrophysics (SPICA)}. Here, NIR observation
+with Subaru would support the IR and far-IR observations of this
+observatory, and could provide a powerful complement that could be
+investigated further.  
+
+For NIR observations, space will always be the preferred option, due to
+the reduced sky and atmospheric seeing effects. However, it is important
+to have complementary observations on the ground. In this respect, it is
+vital that any new NIR imaging capability on Subaru... 
+
+\begin{enumerate} 
+\item ...has K-band sensitivity (to compliment Euclid)
+\item ...is designed to concentrate on studies of the very faint
+      Universe, magnitude $>24$ (to compliment Euclid)  
+\item ...has a very wide field of view (to compliment JWST)
+\end{enumerate}
+
+\par\noindent
+{\bf Ground-based instruments}
+
+Aside from the TMT and E-ELT, there are several current and future
+wide-field NIR instruments that are AO-assisted and that could impact
+the design of a new Subaru capability. Most recent, {\bf Gemini/GeMS},
+in the South, is a Multi-Conjugate Adaptive Optic (MCAO) system,
+sensitive at J,H,K wavelengths and producing images in K with a 0.08''
+FWHM over a 86'' field of view. It has recently been successfully
+commissioned and appears to be working well. Since it is MCAO, its field
+of view is smaller than achievable with GLAO, but with better
+IQ. Gemini/GeMS is probably capable of much of the science discussed in
+Section 1.2 (Milky Way globular clusters), since its field of view is
+still large enough to observe most of the stars in a globular cluster,
+although it would require many pointings to map the large scale
+environment of these clusters (e.g., looking for tidal debris). 
+
+Also in the southern hemisphere, VLT is currently converting one of its
+Unit Telescopes into an Adaptive Optics Facility (AOF). As part of this
+system, they are building a GLAO system,{\bf VLT/Graal}, for use with
+Hawk-I, a $7.5'\times7.5'$ field of view imager. The performance of this
+system is such that it is expected to become 1.5-2 times ``quicker''
+than a seeing limited facility. According to the ESO webpages,  GLAO
+will provide Hawk-I with a delivered IQ that is better than 0.5'' at
+least 80\% of the time.  
+
+While the Hawk-I camera has a smaller field of view than is possible on
+Subaru, it can clearly address some of the science discussed in Section
+1, particularly if it tiles observations to map a larger field. In this
+respect, we note that it could be worthwhile to examine the case for
+developing a wide field NIR instrument that is seeing-limited,
+particularly if this means that efficiency can be gained elsewhere. For
+example, the metric ``etendue'' is often used to quantify the
+``efficiency'' of a camera. Etendue is the product of the telescope
+effective area ($A_{eff}$) and the field of view of the camera
+($\Omega$). GLAO leads to a higher value of $A_{eff}$ (since it is
+quicker at detecting objects), but the value of $\Omega$ for a
+GLAO-corrected field is usually considerably smaller than is possible
+without adaptive optics. Therefore, {\it for science that is not
+confusion-limited, it may be overall more efficient to build a
+seeing-limited NIR camera with a very large field of view, rather than a
+GLAO-assisted camera with a smaller  field of view}. A decision as to
+which approach is better could be determined through examination of the
+science, and by comparison of the maximum size of the seeing-limited
+field of view to the size of the GLAO-corrected field of view. Clearly,
+a seeing-limited camera would not greatly benefit the science discussed
+in Section 1, since this science is wide field {\it and}
+confusion-limited, and is ideal for a GLAO system. 
+
+\subsubsection{Concluding thoughts}
+
+A new wide-field, NIR capability on Subaru is an exciting and powerful
+complement to the instrumentation that will be available on TMT, as well
+as to numerous other facilities that will soon be available (e.g., JWST,
+Euclid, SPICA). A GLAO-assisted imager would be a powerful tool for
+wide-field, confusion-limited science studies, for which resolved
+stellar populations and nearby galaxies could be very powerful science
+drivers. Depending upon the other science that is envisioned, it could
+also be very powerful to develop a seeing-limited, very-wide field
+imager (assuming that the seeing-limited field of view is much larger
+than the GLAO-corrected field of view). The science impact of either
+option, while different, would both be powerful, and would be unique on
+Mauna Kea. 
+
+\vspace{2cm}
+{\bf Acknowledgments:} We thank the organizers of the Subaru GLAO
+science workshop in Sapporo for a very enjoyable and interesting
+meeting. We thank Harvey Richer for providing several of the ideas
+relating to GLAO observations of globular clusters. 
+
+%\end{document}

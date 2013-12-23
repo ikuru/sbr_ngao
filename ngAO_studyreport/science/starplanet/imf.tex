@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Report format:
+%%  - in English
+%%  - in Tex(LaTex)
+%%  - minimum 4 pages (maximum 10 pages?) per category
+%%  - structure
+%%      Introduction (summary of past researches, key questions)
+%%      New windows to be opened with Subaru GLAO
+%%      Proposed observations (obs mode, targets, required # of nights)
+%%      Requirements for GLAO and instruments
+%%　    Synergy/Competitions with other facilities and/or on-going/planed projects
+%%      (optional)
+%%      Figures, Tables(optional)
+%%      References
+%%      Any pretty pictures for gravure? (optional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\thisdir{science/starplanet/}
+
+%\documentclass[]{article}
+%\usepackage{graphicx}
+%\usepackage{amsmath,amssymb}
+%\usepackage{natbib,aas_macros}
+%\citestyle{aa}
+%\bibliographystyle{apj}
+
+
+%\oddsidemargin   -0.2cm
+%\evensidemargin  -0.2cm
+%\topmargin       -0.2cm
+%\textwidth        16.5cm
+%\textheight       22.0cm
+%\parindent        11pt
+
+%\def\gsim{\mathrel{\raise0.35ex\hbox{$\scriptstyle >$}\kern-0.6em % Greater/squiggles
+%\lower0.40ex\hbox{{$\scriptstyle \sim$}}}}
+%\def\lsim{\mathrel{\raise0.35ex\hbox{$\scriptstyle <$}\kern-0.6em % Less than/squiggles 
+%\lower0.40ex\hbox{{$\scriptstyle \sim$}}}}
+
+%\begin{document}
+
+\section{The Origin of the Initial Mass Function\label{sec:IMF}}
+
+\begin{center}
+\noindent
+{\bf M. Fukagawa, Y. Oasa, N. Narita}
+\end{center}
+\vspace{0.5cm}
+
+\normalsize
+%%      Introduction (summary of past researches, key questions)
+\subsection{Introduction}
+\subsubsection{The IMF: Universal or not?}
+Understanding the origin of the initial mass function (IMF) has long
+been an ultimate goal in the field of star formation, and it has a
+crucial impact on study of galaxy evolution. Extensive efforts have been
+performed to establish the IMF for a wide range of stellar mass and
+cluster density, leading to a well-known functional form, so-called
+Salpeter's law; $dN/d(\log m) \propto m^{\Gamma}$, $\Gamma = -1.35$
+where $m$ is stellar mass \citep{sal55}. The Salpeter-like IMF appears
+almost anywhere at least in the mass range of 0.4--10~$M_{\odot}$
+although other types of representations have also been proposed
+especially for stars less massive than 1~$M_{\odot}$
+\citep{mil79,sca86,sca98,kro01}. The fact that the observed IMFs can be
+reasonably well fitted by these functional forms yielded the idea of its
+{\it universality}. However, the universality suggests that most, if not
+all, stars form in the same way, which may sound unrealistic considering
+star formation process in clusters with difference physical properties. 
+% such as member density, metallicity, and UV radiation field.
+
+In fact, there are compelling evidences of significant {\it variation}
+of the IMF among   star-forming regions or within one cluster
+\citep{oas06,hil97}. For instance, \cite{har08} found the flatter IMF
+($\Gamma = -0.74$) for the massive Galactic young cluster, NGC 3603,
+than the Salpeter-like one, confirming the top-heavy IMF in such
+massive clusters and starbursts. At the same time, they identified the
+different IMF slopes with the distance from the cluster center,
+indicating that massive members are concentrated in the inner region
+(Fig.~\ref{fig:imf}). It is worth noting that NGC 3603 is located at
+7~kpc (with $A_V =$ 4--5) and harboring O- and B-type stars in a volume
+of $<$1~pc$^3$, and the use of adaptive optics (AO) with VLT was
+effective to study the IMF for a wide range of stellar mass at the
+dense, central region of the cluster. 
+
+Then, the question is, which physical/chemical process/property
+determines the shape of the IMF. Is it turbulence, gravity, magnetic
+field, metallicity, UV radiation, or interplay of those? To address
+this, it is required to further develop observations to establish the
+IMF in various environments by obtaining statistically meaningful
+sample, where AO can play an important role.  
+
+\subsubsection{How planetary-mass objects form?} 
+
+The low-mass end of the IMF is intimately related to formation mechanism
+of planetary-mass objects (PMOs) which is one of the most outstanding,
+unsolved problems.  
+Free-floating planets, gravitationally unbound to  host stars, have been
+discovered in star-forming regions (e.g., \citealt{oas99}) as a natural
+extension of the investigation of the stellar IMF. They could form in a
+similar way to stars by fragmentation of molecular cloud cores, or in
+circumstellar disks as bound planets but ejected by dynamical
+instability. The bottom of the IMF can indicate the fragmentation
+(opacity) limit, and hence it can reflect main building process for
+PMOs. However, even in the deepest surveys, the detections were limited
+to objects of a few to 5 Jupiter-masses, and the low-mass end has not
+been established yet. On the other hand, the commonality of such
+isolated PMOs was also recognized by microlensing, and the possible
+change in the mass function at around one Jupiter-mass has been
+suggested \citep{sum11}.  
+
+
+There is one notable implication obtained by recent observations in
+young clusters; PMOs found in such young regions are probably less
+common than determined by microlensing in the field. In the clusters,
+the mass spectrum smoothly extends into the planetary-mass regime down
+to $\sim$6~M$_{\rm Jupiter}$ and the slope of the spectrum is not rising
+\citep{sch12,pen12}. The planets less massive than 6~M$_{\rm Jupiter}$
+might have the distinct mass spectrum. Alternatively, planets found in
+microlensing might have experienced the different formation process such
+as core accretion in circumstellar disks. It is thus definitely
+important to go into the lower mass regime in future observations. It is
+also useful to keep in mind when probing less massive members that the
+mass of a young planet is usually estimated on the basis of the
+evolutionary models which basically assume that planets form like
+stars. Such models predict brighter objects than the calculations
+supposing the formation through core accretion in  disks
+(Fig.~\ref{fig:models}).  Higher sensitivity is the key for future
+direct observations towards sub-Jupiter mass planets and to
+appropriately interpret the bottom of the IMF. 
+
+
+%%      New windows to be opened with Subaru GLAO
+\subsection{New windows to be opened with Subaru GLAO}
+
+Establishing the IMF under various star-forming environments requires
+observations of distant clusters, which demands higher angular
+resolution to separate each cluster member as well as higher
+sensitivity. In massive star-forming regions, higher angular resolution
+is also necessary to probe the cluster centers with being less
+contaminated by the brightest stars. Surveys of star-forming regions
+have been performed without AO so far since the primary requirement is a
+wide field to count enough number of stars to construct the
+IMF. Observations utilizing multi-conjugate AO has begun only recently,
+but the field-of-view (FoV) is not quite large, $<2'$
+\citep{pes13,bou09}.  
+The combination of the wider field and AO will certainly enable
+efficient observations of more clusters and their central regions.  
+
+Observations basically consist of two steps; photometric detections of
+candidate cluster members and spectroscopic follow-ups to accurately
+estimate their temperature, surface gravity, and extinction, hence their
+memberships and masses. Subaru/MOIRCS is already a powerful tool but it
+is problematic that spectra are often overlapped with those of the
+neighboring objects. Obtaining ``uncontaminated spectra'' is practically 
+important for this science case, and GLAO can contribute to it.  
+
+High sensitivity is important for detection and characterization of
+PMOs. In addition, high observing efficiency provided by a large field
+is essential to investigate the bottom of the IMF. The very deep
+($\sim$2 hours on source), wide-field imaging with GLAO will provide the
+detection limit $\sim$3~magnitudes better than the existing surveys of
+young clusters. This improvement corresponds to pushing down the lowest
+detectable mass from a few Jupiter-masses  to $\lsim$1~M$_{\rm Jupiter}$
+for a cluster at 400~pc with $A_V < 1 $ and an age of $\sim$3~Myr, i.e.,
+entering sub-Jupiter-mass regime.  On the other hand, observing distant
+regions will improve the statistics of the lower-mass IMF, and for
+instance, the limiting magnitudes of $J=25$ will enable detections of
+massive, embedded PMOs at an age of 1~Myr in NGC 7538 ($d \sim 2.7$~kpc;
+$A_V>15$). 
+
+
+%%      Proposed observations (obs mode, targets, required # of nights)
+\subsection{Proposed observations}
+
+The study of the IMF will benefit from very deep, wide-field imaging and
+MOS follow-up observations with GLAO. Approximately 30 star-forming
+regions within 4~kpc can be potential targets. The required nights
+depend on the cluster size, distance, and probably brightness contrast
+between the brightest and faintest members. Nevertheless, crudely
+assuming no mosaicking (given the planned FoV of $13.'6$ ) and on-source
+integration of 2 hours, total $\sim$10 nights are required for the whole
+cluster sample for the imaging. Spectroscopic follow-up may need one
+night per cluster, and in this case, $\sim$40 nights are necessary. Note
+that this is a very crude estimate ignoring the property of each
+cluster. For instance, some nearby young clusters and associations are
+sparse but good targets for finding less massive PMOs. More nights will
+be required for such targets.  
+
+%%      Requirements for GLAO and instruments
+\subsection{Requirements for GLAO and instruments}
+A wide-field NIR imager and multi-object spectrograph (MOS) is required
+for this science case. Photometric estimate of the masses for the
+detected sources is not impossible but  includes uncertainties, thus the
+spectroscopic capability is needed to confirm the cluster memberships
+and to obtain the better determination of their masses. If an integral
+field spectrograph is available, disks/jet structures can also be
+targeted. The wider FoV is better, but the FoV of $10'$--$14'$, which is
+currently planned, would be good enough
+(Fig~\ref{fig:spatial_dist}). This may be difficult to achieve, but
+higher angular resolution, about $0.''1$ ($< 0.''2$), is quite valuable
+to discriminate PMOs from background galaxies based on the morphology.  
+
+It is worth noting that a wide-field NIR imager and MOS is very useful
+for exoplanet science although GLAO itself is not critical due to its
+relatively low strehl ratio. One of the significant progress in the
+field of exoplant has been brought by the Kepler mission, and over 2500
+planet candidates were discovered so far, including habitable planets,
+Earth-sized or even smaller planets, and circumbinary ones
+\citep{bor13,bor11}. However, Kepler's targets are relatively faint and
+far, which makes radial-velocity follow-ups for all the candidates
+difficult. Further study on atmospheric characterization is also hard to
+perform. Thus, as a next step, future planet surveys will target nearby
+bright stars to detect and characterize Earth-like or super-Earth
+planets especially in the habitable zone, and one such space mission is
+TESS (Transiting Exoplanet Surbey Satellite). TESS will employ transit
+method for planet detection and currently planned to  be launched in
+2017. The important, probably most exciting part of the follow-up of
+TESS detections is atmospheric spectroscopy with large-aperture
+telescopes. The NIR transmission spectrum is valuable  since NIR is
+sensitive to molecules such as CH$_4$, CO, and CO$_2$ while the optical
+one is useful to detect Rayleigh scattering \citep{nar13,ben12}
+(Fig.~\ref{fig:trans_spec}). In addition, it is observationally a key to
+simultaneously obtain spectra for target and reference stars, thus MOS
+is the required capability for transmission spectroscopy
+\citep{gib13}. It is also preferable to use a narrower slit to reduce
+sky background while keeping the slit width to avoid light-loss, but
+unfortunately, GLAO cannot contribute much to reduce the slit width due
+to the moderate AO correction. Still, it should be emphasized that
+wide-field NIR MOS is certainly  useful for characterizing exoplanetary
+atmospheres and if a FoV of $\sim$10$'$ is achieved, it will become a
+very unique capability among the 8-m class telescopes. 
+
+\vspace{10mm}
+
+\begin{figure}[htbp]
+\centerline{
+\includegraphics[height=50mm]{\thisdir fig1.eps}
+}
+\caption{IMFs for NGC 3603 obtained near ($left$) and far from ($right$)
+ the cluster center with VLT \citep{har08}. The power-law index of the
+ slope is $-0.74$ for the whole cluster, but the steepening with cluster
+ radius was observed, indicating mass segregation in the inner
+ region. The cluster center was observed with adaptive optics,
+ successfully revealing the subsolar mass members in the core of this
+ dense cluster. Diamonds and circles indicate the raw and the
+ incompleteness corrected mass distributions, respectively. The best-fit
+ power-law slopes are shown as a dotted and a dashed line.  The vertical
+ dashed and dotted lines indicate the 50\% completeness limit within $r
+ \sim 30''$ ($left$) and the detection limit in the outer field
+ ($right$). }
+\label{fig:imf}
+\end{figure}
+
+\begin{figure}
+\centerline{
+\includegraphics[height=45mm]{\thisdir fig2a.eps}
+\hspace{10mm}
+\includegraphics[height=45mm]{\thisdir fig2b.eps}
+}
+\caption{Models of cloudy atmospheres for a planet of 1--10~M$_{\rm
+ Jupiter}$ at 400~pc \citep{spi12}. The solid lines correspond to the
+ stellar-like formation (cloud fragmentation, disk instability) while
+ the dotted ones represent the formation via core accretion in a
+ circumstellar disk.}
+\label{fig:models}
+\end{figure}
+
+\begin{figure}
+\centerline{
+\includegraphics[height=55mm]{\thisdir fig3a.eps}
+\hspace{5mm}
+\includegraphics[height=55mm]{\thisdir fig3b.eps}
+}
+\caption{$Left$: Color composite ($J, H, K_S$) image of S106 obtained
+ with Subaru/CISCO \citep{oas06}. The FoV is about $5' \times
+ 5'$. $Right:$ Spatial distribution of sources detected in S106
+ \citep{oas06}. The completeness limit lies in $18 < K' < 20.1$. The
+ circles show YSO candidates and the crosses denote field stars. For
+ instance, a source with $K'=19.3$ and $A_V=10$ at 1~Myr corresponds to
+ 6~M$_{\rm Jupiter}$ at the distance of S106 (600~pc).}
+\label{fig:spatial_dist}
+\end{figure}
+
+\begin{figure}
+\centerline{
+\includegraphics[height=50mm]{\thisdir fig4a.eps}
+\hspace{10mm}
+\includegraphics[height=50mm]{\thisdir fig4b.eps}
+}
+\caption{$Left$: An example of a model transmission spectram of a
+ super-Earth atmosphere \citep{ben12}. $Right$: Measured planet-to-star
+ radius ratios for a transiting super-Earth GJ 1214b, compared with the
+ two best-fit theoretical spectra for the water-rich atmosphere
+ \citep{nar13}. A wide-field ($10'$) MOS will be a unique capability and
+ very useful to investigate exoplanets' atmospheres.}
+\label{fig:trans_spec}
+\end{figure}
+
+%\newpage
+\bibliographystyle{apj}
+\bibliography{\thisdir imf}
+
+%\end{document}
